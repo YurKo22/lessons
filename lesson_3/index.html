@@ -1,202 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Варіант №3 !! Основний !! (підключення окремого файлу) -->
-		<link rel="stylesheet" href="css/style.css">
-		<title>Lesson 3</title>
-		<!-- Варіант №1 (тег style) -->
-		<!-- 
-		<style>
-			
-		</style>
-		 -->
-	</head>
-	<body>
-		<!-- Анатомія вкладенності -->
-		<!-- Батьківський елемент для тегів P та SPAN -->
-		<div>
-			<!-- Дочірній елемент першого рівня/безпосередній відносно тегу DIV -->
-			<p>
-				<!-- 
-					Дочірній елемент першого рівня/безпосередній для тегу P 
-					та елемент другого рівня (вкладеності) відносно тегу DIV
-				 -->
-				<span></span>
-			</p>
-		</div>
-
-		<!-- Шлях до файлів -->
-		<!-- <img src="img/home/01.png" alt=""> -->
-		<!-- Вкладеність -->
-		<!-- 
-		<h1>Заголовок</h1>
-		<div class="text">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nihil nulla mollitia consequuntur tenetur maiores quasi natus voluptate dolorem esse facilis fugiat eveniet, eaque illo at dolor, culpa perspiciatis ipsum?
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nihil nulla mollitia consequuntur tenetur maiores quasi natus voluptate dolorem esse facilis fugiat eveniet, eaque illo at dolor, culpa perspiciatis ipsum?
-			</p>
-			<p>
-				Lorem ipsum dolor sit am
-				et consectetur adipisicing elit. Quo nihil nulla mollitia consequuntur tenetur maiores quasi natus voluptate dolorem esse facilis fugiat eveniet, eaque illo at dolor, culpa perspiciatis ipsum?
-			</p>
-		</div>
-		<ul>
-			<li>Пункт</li>
-			<li>Пункт</li>
-			<li>Пункт</li>
-			<li>Пункт</li>
-			<li>Пункт</li>
-		</ul>
-		 -->
-		<!-- Виняток -->
-		<!-- У рядковий тег A ми МОЖЕМО вкладати конструкції, 
-			у тому числі з використанням блочних, будівельних тегів  -->
-		<!-- 
-		<a href="contacts.html">
-			<div>
-				<img src="" alt="">
-			</div>
-			<div>
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur asperiores, laudantium nam vel, praesentium ut id minima autem architecto numquam similique suscipit consequatur quas harum libero? Error labore veritatis tempore.
-				</p>
-			</div>
-		</a>
-		 -->
-
-		<!-- Атрибути -->
-		<!-- class="ім'я ім'я". 
-			В значенні вказуємо довільне ім'я класу(сів).
-			Однакових класів може бути скільки завгодно
-		-->
-		<!-- 
-			Правила написання імені класу: 
-			0) ім'я довільне, але логічне - описує цей об'єкт
-			1) тільки латиниця (eng)
-			2) тільки маленьки (прописні) літери
-			3) пробіли у імені класу (коли в імені більше одного слова) замінюємо на "-" (дефіс)
-		-->
-		<!-- 
-		<div class="text">
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-		</div>
-		<div class="text">
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-		</div>
-		<div class="our-advantages">
-
-		</div>
-		 -->
-
-		<!-- Атрибут class може мати безліч значень розділених пробілом -->
-		<!-- 
-		<div class="text our-advantages">
-
-		</div>
-		 -->
-
-		<!-- Атрибут ID -->
-		<!-- 
-			ЗНАЧЕННЯ ID МАЄ БУТИ УНІКАЛЬНИМ НА СТОРІНЦІ !!!!!!!!!
-		 -->
-		<!-- 
-			Правила написання імені ID: 
-			0) ім'я довільне, але логічне - описує цей об'єкт
-			1) тільки латиниця (eng)
-			2) тільки маленьки (прописні) літери
-			3) пробіли у імені класу (коли в імені більше одного слова) замінюємо на "-" (дефіс)
-		-->
-		<!-- 
-		<div id="block"></div>
-		 -->
-		<!-- Може бути, але не варто -->
-		<!-- <div title="" class="block"></div> -->
-
-		<!-- Додаткові атрибути -->
-		<!-- title - довільний текст підказки, яка з'являється при наведенні на об'єкт -->
-		<!-- alt - довільний текст (опис) зображення -->
-		<!-- 
-		<a href="" title="Я підказка" target="_blank">
-			Я посилання
-		</a>
-		<img title="" src="" alt="Опис зображення">
- 		-->
-		<!-- Взаємодія HREF + ID -->
-		<!-- 
-		<div id="top" class="text">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-		</div>
-		<a href="#top" class="link">Наверх ^</a>
-		 -->
-
-		<!-- Введення в CSS -->
-		<h1>Я заголовок</h1>
-		<h2>Підрозділи:</h2>
-		<ul>
-			<li>
-				<a href="">Підрозділ №1</a>
-			</li>
-			<li>
-				<a href="">Підрозділ №2</a>
-			</li>
-			<li>
-				<a href="">Підрозділ №3</a>
-			</li>
-		</ul>
-		<div class="text">
-			<!--Варіант №2 (рядковий метод) (Атрибут style) -->
-			<p> <!-- style="пишемо стилі" -->
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-		</div>
-		<div class="lesson">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-		</div>
-	</body>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Lesson 3</title>
+    </head>
+    <body>
+        <header>
+            Мандруючи Україною
+        </header>
+        <main>
+            <h1>Мертве Озеро</h1>
+            <p>
+                Таємниче озеро
+                <mark>Мертве Озеро</mark>
+                (Журавлине) розташовується на вершині гори в заповіднику Сколівські Бескиди. Вже не одне століття його оточують таємниці і легенди. А вся справа в незвичайній природі виникнення цієї водойми і його водах: темна поверхня, під якою не видно дна, періодично закипає бульбашками газу, що піднімаються з глибини.
+            </p>
+            <img src="img/lake1.jpg" alt="Мертве озеро 1">
+            <h2>Цікаві факти, через які варто побувати на озері Журавлиному</h2>
+            <ol>
+                <li>Глибину Журавлиного озера ніхто не знає точно. Навіть жителі сусіднього села за три століття його існування так і не змогли її виміряти.</li>
+                <li>Назва озера має подвійне значення: по-перше, в його околицях росте багато журавлини, а, по-друге, через відсутність людей поблизу тут часто селяться журавлині сім’ї.</li>
+                <li>Мертвим озеро називають ще й через сусідство з болотами, в яких, за легендою, згинуло чимало людей.</li>
+                <li>Краса озера та навколишніх лісів заворожує, тому воно стало популярним туристичним об’єктом.</li>
+                <li>Посеред Мертвого озера курсує плавучий острів, витканий природою зі старих корчів, гілок дерев і коріння. Побачити його можна завжди в різних частинах водойми.</li>
+            </ol>
+            <img src="img/lake2.jpg" alt="Мертве озеро 2">
+            <h3>Місце на карті</h3>
+            <img src="img/map1.png" alt="Мертве озеро на карті 1">
+            <img src="img/map2.png" alt="Мертве озеро на карті 2">
+            <h2>Мертве озеро: легенди і правда</h2>
+            <p>
+                За свої темні води, які й справді мають чорний колір, озеро здавна називають Мертвим. А місцеві жителі привласнюють йому чаклунські властивості. Насправді колір води та відсутність життя в озері легко пояснити: свого часу водойма утворилася на місці провалу гірської породи. Навколишні ліси роками скидали листя і гілки в котлован, а потім дорогу до нього пробили гірські ключі. Озеро наповнилося чистою водою, але донні відклади, які продовжують розкладатися на дні, виробляють велику кількість вуглекислого газу і сірководню, в якому не можуть вижити ні риби, ні молюски, ні земноводні. Товстий шар мулу надав колір ночі воді озера – і воно стало називатися Мертвим.
+            </p>
+            <h2>Не тільки озеро, а й інші дива природи</h2>
+            <p>
+                Крім озера в цій частині заповідника є й інші цікаві пам’ятки: відправившись на екскурсію до води мертвою, не забудьте зазирнути до джерела живої води, яке розташоване неподалік. Також варто поглянути на кам’яні валуни гори Ключ, відвідати меморіал «Січовим стрільцям» на її вершині, і прогулятися до Кам'янецького водоспаду.
+            </p>
+        </main>
+        <footer>
+            Приємної вам подорожі!
+        </footer>
+        <h2>Підрозділи:</h2>
+        <ul>
+            <li>
+                <a href="">Підрозділ №1</a>
+            </li>
+            <li>
+                <a href="">Підрозділ №2</a>
+            </li>
+            <li>
+                <a href="">Підрозділ №3</a>
+            </li>
+        </ul>
+    </body>
 </html>
