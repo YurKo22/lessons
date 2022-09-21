@@ -48,12 +48,40 @@
   font-weight: 900;
   font-style: normal;
 }
-
+/* ----------------------------------------------------- */
 body {
   font-family: "Larsseit";
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#start, #finish {
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 24px;
+  font-style: italic;
+  font-size: 18px;
+  color: #1eff00;
 }
 
 .title {
   font-family: "Lato";
   font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
 }
+.subtitle{
+   font-family: "Lato";
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 30px;
+}
+.numbers{
+   font-weight: 700;
+}
+.locality {
+   font-weight: 400;
+   font-style: italic;
+   text-decoration: underline;
+}
+
