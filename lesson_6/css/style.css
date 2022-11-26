@@ -1,34 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 
-@font-face {
-  font-family: "Larsseit";
-  src: url("../fonts/Larsseit.woff2") format("woff2"),
-    url("../fonts/Larsseit.woff") format("woff");
-  font-display: swap;
+body {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  color: #1e212c;
 }
-@font-face {
-  font-family: "Larsseit";
-  src: url("../fonts/Larsseit-Medium.woff2") format("woff2"),
-    url("../fonts/Larsseit-Medium.woff") format("woff");
-  font-display: swap;
-  font-weight: 500;
-  font-style: normal;
+.container {
+  max-width: 810px;
+  margin: 0 auto;
 }
-@font-face {
-  font-family: "Larsseit";
-  src: url("../fonts/Larsseit-Bold.woff2") format("woff2"),
-    url("../fonts/Larsseit-Bold.woff") format("woff");
-  font-display: swap;
+.title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  margin-bottom: 92px;
+  color: #1e212c;
+}
+.images {
+  margin-bottom: 60px;
+}
+.bold-text {
   font-weight: 700;
-  font-style: normal;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
 }
-
-body{
-	font-family:"CircularStd", serif;
+.text-block-1 {
+  margin-bottom: 48px;
 }
-
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #424551;
+}
+.text-1 {
+  margin-bottom: 32px;
+}
 
 /* -------- CSS-властивості шрифтів ------------ */
 
@@ -104,10 +111,10 @@ font-weight: цифрове значення або значення слово�
 color: слово або код кольору;
 успадковується
 */
-.title{
-	/* color: green; */
-	/* color: #1f7909; */
-	/* color: rgba(55, 168, 51, 0.5); - прозорість */
+.title {
+  /* color: green; */
+  /* color: #1f7909; */
+  /* color: rgba(55, 168, 51, 0.5); - прозорість */
 }
 
 /*
@@ -126,7 +133,6 @@ justify - вирівнює текст по ширині об'єкту в яко�
 	text-align: center;
 }
 */
-
 
 /*
 Додає тексту певне оформлення 
@@ -151,7 +157,6 @@ text-shadow: горизонтальне_зміщення вертикальне_
 	text-shadow: 2px 2px 5px #000;
 }
 */
-
 
 /*
 Встановлює тип (регістр) літер (прописні або заглавні)
@@ -195,7 +200,6 @@ text-indent: значення;
 	text-indent: 20px;
 }
 */
-
 
 /*
 Встановлює інтервал між літерами (символами)
@@ -246,10 +250,10 @@ border-box - значення розмірів враховують відсту
 */
 
 .block {
-	background-color: #77608d;
+  background-color: #77608d;
 }
 .inline {
-	background-color: #7A956B;
+  background-color: #7a956b;
 }
 
 /* Відступи */
@@ -295,18 +299,18 @@ margin-left: значення;
 */
 /* Практика відступи */
 .section {
-	background-color: #77608d;
-	margin-bottom: 20px;
-	padding: 15px;
+  background-color: #77608d;
+  margin-bottom: 20px;
+  padding: 15px;
 }
 .section__text {
-	border: 10px solid green;
-	padding: 15px;
-	margin-bottom: 15px;
+  border: 10px solid green;
+  padding: 15px;
+  margin-bottom: 15px;
 }
-.section-2{
-	background-color: #7A956B;
-	padding: 15px;
+.section-2 {
+  background-color: #7a956b;
+  padding: 15px;
 }
 
 /*
@@ -439,13 +443,13 @@ border: товщина стиль колір;
 Основні стили - solid dotted dashed double
 */
 .block {
-	/*
+  /*
 	margin: 15px;
 	padding: 15px;
 	border: 5px solid #000000;
 	border-bottom: none;
 	*/
-	/*
+  /*
 	border-top: 1px solid red;
 	border-right: 2px dotted blue;
 	border-bottom: 3px double green;
@@ -531,7 +535,7 @@ hidden - ховає об'єкт (з об'єктом не можна взаємо
 	max-width: 200px;
  }
  */
- /* margin: 0 0 0 auto; */
+/* margin: 0 0 0 auto; */
 
 /* Прикол з тінями */
 /*
