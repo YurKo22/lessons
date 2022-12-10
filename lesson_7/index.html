@@ -1,74 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
-		<title>Lesson 7</title>
-	</head>
-	<body>
-		<header class="header"> <!-- Основний блок, блок верхнього рівня, полотно -->
-			<div class="header__container"> <!-- Блок з контентом, обмежуючий контейнер -->
-				<!-- А тут вже структура/контент -->
-			</div>
-		</header>
-		<!-- Вірний варіант -->
-		<main>
-			<div class="about-us"> <!-- Основний блок, блок верхнього рівня, полотно -->
-				<div class="about-us__container"> <!-- Блок з контентом, обмежуючий контейнер -->
-					<!-- А тут вже структура/контент -->
-					<!-- 
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veritatis facere repellat distinctio vero, consequatur aut dolorum a vel error ab itaque voluptas velit earum est voluptate vitae eaque accusamus.
-					 -->
-				</div>
-			</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 7</title>
+  </head>
+  <body>
+    <header class="header" id="up">
+      <div class="header__container">
+        <div class="logo">
+          <img src="img/logo.svg" alt="logo" />
+        </div>
+        <div class="navigation">
+          <a href="#">About Us</a>
+          <a href="#">Courses</a>
+          <a href="#">Events</a>
+          <a href="#" class="red">Blog</a>
+          <a href="#">Contacts</a>
+        </div>
+      </div>
+    </header>
 
-			<div class="advantages"> <!-- Основний блок, блок верхнього рівня, полотно -->
-				<div class="advantages__container"> <!-- Блок з контентом, обмежуючий контейнер -->
-					<!-- А тут вже структура/контент -->
-					<!-- 
+    <main>
+      <div class="page">
+        <div class="page__container">
+          <div class="article">
+            <div class="article-img">
+              <img src="img/article-icon.svg" alt="article icon" />
+              Article
+              <span class="red">HR & Recruting</span>
+            </div>
+          </div>
+          <h1 class="title">
+            HR statistics: job search, interviews, hiring and recruiting
+          </h1>
+          <div class="details">
+            <div class="data">
+              <div class="data-img">
+                <img src="img/main/calendar.jpg" alt="calendar" />
+              </div>
+              <div class="data-text">August 3, 2020</div>
+            </div>
+            <div class="timing">
+              <div class="timing-img">
+                <img src="img/main/clock.jpg" alt="clock" />
+              </div>
+              <div class="timing">4 min read</div>
+            </div>
+            <div class="share">
+              <div class="share-text">Share:</div>
+              <a href="#">
+                <img src="img/main/facebook.jpg" alt="facebook" />
+              </a>
+              <a href="#">
+                <img src="img/main/twitter.jpg" alt="twitter" />
+              </a>
+              <a href="#">
+                <img src="img/main/linked-in.jpg" alt="linked-in" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="advantages">
+        <!-- Основний блок, блок верхнього рівня, полотно -->
+        <div class="advantages__container">
+          <!-- Блок з контентом, обмежуючий контейнер -->
+          <!-- А тут вже структура/контент -->
+          <!-- 
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veritatis facere repellat distinctio vero, consequatur aut dolorum a vel error ab itaque voluptas velit earum est voluptate vitae eaque accusamus.
 					 -->
-				</div>
-			</div>
-		</main>
-		<!-- Ви пропонуєте (невірний варіант) -->
-		<main class="page">
-			<div class="page__container">
-				<div class="about-us">
-					<!-- А тут вже структура/контент -->
-					<!-- 
+        </div>
+      </div>
+    </main>
+    <!-- Ви пропонуєте (невірний варіант) -->
+    <main class="page">
+      <div class="page__container">
+        <div class="about-us">
+          <!-- А тут вже структура/контент -->
+          <!-- 
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusantium id, ducimus eos commodi quo inventore maxime vel tempora dolorum nemo velit nulla, porro ratione voluptas maiores est enim expedita.
 					 -->
-				</div>
-				<div class="advantages">
-					<!-- А тут вже структура/контент -->
-					<!-- 
+        </div>
+        <div class="advantages">
+          <!-- А тут вже структура/контент -->
+          <!-- 
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias a ullam quos iste quas nam, vitae optio rerum nemo nesciunt. Repudiandae accusamus, impedit expedita ratione quisquam vero provident! Nemo, rem.
 					 -->
-				</div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
 
-			</div>
-		</main>
-		<footer>
-		</footer>
+    <div class="block">
+      <div class="block__container">
+        <div class="block__background">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+          officia facilis odit vel aliquid laboriosam harum dolorum iusto neque.
+          Delectus veniam cumque fuga maiores impedit culpa voluptas esse quod
+          tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Ducimus, qui eligendi debitis nesciunt vel, iste, at obcaecati placeat
+          incidunt labore excepturi modi? Esse animi facere necessitatibus quam
+          fugit at eos?
+        </div>
+      </div>
+    </div>
 
-		<div class="block">
-			<div class="block__container">
-				<div class="block__background">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam officia facilis odit vel aliquid laboriosam harum dolorum iusto neque. Delectus veniam cumque fuga maiores impedit culpa voluptas esse quod tempora.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, qui eligendi debitis nesciunt vel, iste, at obcaecati placeat incidunt labore excepturi modi? Esse animi facere necessitatibus quam fugit at eos?
-				</div>
-			</div>
-		</div>
-
-		<div class="article">
-			<h1 class="article__title">
-				HR statistics: job search, interviews, hiring and recruiting
-			</h1>
-		</div>
-
-	</body>
+    <div class="article">
+      <h1 class="article__title">
+        HR statistics: job search, interviews, hiring and recruiting
+      </h1>
+    </div>
+  </body>
 </html>
