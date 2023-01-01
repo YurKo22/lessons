@@ -1,3 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #424551;
+}
+[class*="__container"] {
+  max-width: 810px;
+  margin: 0 auto;
+}
+.page__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  color: #1e212c;
+  margin-bottom: 26px;
+}
+.page__image {
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.page__main-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1e212c;
+  margin-bottom: 24px;
+}
+.page__text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+.page__text p {
+  margin-bottom: 22px;
+}
+.page__text ul {
+  margin-bottom: 24px;
+}
+.page__text li {
+  margin-bottom: 4px;
+  padding-left: 52px;
+
+  background: url("../img/icons/check.svg") 0 6px no-repeat;
+}
+.page__blockquote {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1e212c;
+  margin-bottom: 48px;
+
+  background: url("../img/icons/braces.svg") 0 0 no-repeat;
+  padding-left: 58px;
+}
+.different {
+}
+
 /* 
 .about-us {
 	background-color: #77608d;
@@ -22,11 +80,11 @@
 }
  */
 
-
-.block {}
+.block {
+}
 .block__container {
-	/* max-width: 500px; */
-	/* margin: 0 auto; */
+  /* max-width: 500px; */
+  /* margin: 0 auto; */
 }
 
 /* Властивість background
@@ -38,33 +96,33 @@
 */
 
 .block__background {
-	padding: 15px;
-	/* height: 1000px;  */
+  padding: 15px;
+  /* height: 1000px;  */
 
-	/* Окремі властивості */
+  /* Окремі властивості */
 
-	/* Визначає колір фону елемента */
-	/* background-color: green; */
+  /* Визначає колір фону елемента */
+  /* background-color: green; */
 
-	/* 
+  /* 
 	Встановлює фонове зображення елемента 
 	або задає градієнтну заливку 
 	!! Зображення НЕ встановлює розміри об'єкту
 	*/
-	/* background-image: url("../img/rockstar.jpg"); */
-	/* background-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); */
+  /* background-image: url("../img/rockstar.jpg"); */
+  /* background-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); */
 
-	/* Визначає, як повторюватиметься фонове зображення */
-	/* (за замовченням) */
-	/* background-repeat: repeat;  */
-	/* Не повторяти */
-	/* background-repeat: no-repeat; */
-	/* Повтор по горизонталі */
-	/* background-repeat: repeat-x; */
-	/* Повтор по вертикалі */
-	/* background-repeat: repeat-y; */
+  /* Визначає, як повторюватиметься фонове зображення */
+  /* (за замовченням) */
+  /* background-repeat: repeat;  */
+  /* Не повторяти */
+  /* background-repeat: no-repeat; */
+  /* Повтор по горизонталі */
+  /* background-repeat: repeat-x; */
+  /* Повтор по вертикалі */
+  /* background-repeat: repeat-y; */
 
-	/*
+  /*
 	Задає початкове положення фонового зображення,
 	де перше значення (відсотки, px, слово) 
 	визначає розташування по горизонталі,
@@ -77,19 +135,18 @@
 	bottom
 	right
 	*/
-	/* background-position: 0 0;  */
+  /* background-position: 0 0;  */
 
-
-	/* 
+  /* 
 	Встановлює, чи прокручуватиметься 
 	фонове зображення разом із вмістом елемента.
 
 	scroll - (за замовченням) скролиться разом з блоком
 	fixed - фонове зображення НЕ скролиться разом з блоком
 	*/
-	/* background-attachment: scroll;  */
+  /* background-attachment: scroll;  */
 
-	/*
+  /*
 	Масштабує фонове зображення згідно з заданими розмірами. 
 	У цифрах, де перше значення (відсотки, px) визначає ширину,
 	друге – висоту. Або спеціальним значенням.
@@ -98,19 +155,18 @@
 	cover - Масштабує зображення зі збереженням пропорцій так, щоб його ширина або висота дорівнювала ширині або висоті блоку. Тобто з більшого боку картинки
 
 	*/
-	/* background-size: auto 100px; */
-	/* background-size: contain; */
+  /* background-size: auto 100px; */
+  /* background-size: contain; */
 
-	/* Універсальна властивість - background */
-	/* background: green url("../img/rockstar.jpg") 0 0 / cover no-repeat;  */
+  /* Універсальна властивість - background */
+  /* background: green url("../img/rockstar.jpg") 0 0 / cover no-repeat;  */
 
-	/* Встановлення кількох фонових зображень для блоку */
-	/* background: url("../img/rockstar.jpg") no-repeat 0 0 / 200px, linear-gradient(55.95deg, rgba(255, 64, 58, 0.3) 0%, rgba(247, 94, 5, 0.3) 100%), url("../img/home/01.png") no-repeat right top / 800px; */
+  /* Встановлення кількох фонових зображень для блоку */
+  /* background: url("../img/rockstar.jpg") no-repeat 0 0 / 200px, linear-gradient(55.95deg, rgba(255, 64, 58, 0.3) 0%, rgba(247, 94, 5, 0.3) 100%), url("../img/home/01.png") no-repeat right top / 800px; */
 }
 
-
-
-.article {}
+.article {
+}
 .article__title {
-	font-size: 40px;
+  font-size: 40px;
 }
