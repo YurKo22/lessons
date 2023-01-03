@@ -1,5 +1,26 @@
 
-@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #424551;
+  line-height: 1.6;
+}
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.page__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  margin-bottom: 26px;
+}
+
+
+
+
+
 
 /*
 body{
@@ -242,7 +263,7 @@ even - через один парні
 }
 */
 
-
+/* 
 .block {
 	background-color: #77608d;
 	padding: 15px;
@@ -268,7 +289,7 @@ even - через один парні
 }
 
 /* Обнулення відступу для будь-якого останього об'єкту */
-.block>*:last-child {
+/* .block>*:last-child {
 	margin-bottom: 0px;
 }
 
@@ -279,7 +300,7 @@ even - через один парні
 }
 .list__item:not(:last-child) {
 	margin-bottom: 15px;
-}
+} */
 
 /* Псевдоелементи */
 /*
@@ -289,26 +310,22 @@ even - через один парні
 
 !!!!! Рядкові !!!!!
 */
-
+/* 
 span::before{
-	/* Обов'язково!!!!!! */
 	content: "("; 
 }
 span::after {
-	/* Обов'язково!!!!!! */
 	content: ")";
 }
 
 div::before {
-	/* Обов'язково!!!!!! */
 	content: "(";
 }
 
 div::after {
-	/* Обов'язково!!!!!! */
 	content: ")";
-}
-
+} */
+/* 
 
 ul{
 	margin-left: 20px;
@@ -350,4 +367,4 @@ ol li::before{
 }
 ol li:not(:last-child) {
 	margin-bottom: 10px;
-}
+} */ */
