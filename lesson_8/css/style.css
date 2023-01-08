@@ -175,7 +175,6 @@ span::after {
 ul li:hover::before {
   transform: scale(1.5);
 }
-
 ol{
 	margin-left: 20px;
 	margin-bottom: 20px;
