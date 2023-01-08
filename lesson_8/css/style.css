@@ -98,77 +98,9 @@ body {
   margin-bottom: 40px;
 }
 
-/*
-body{
-	font-family: "Lato";
-	color: #424551;
-}
-
-[class*="__container"]{
-	max-width: 1230px;
-	margin: 0 auto;
-}
-
-.page {}
-.page__container {}
-.page__title {
-	font-weight: 900;
-	font-size: 46px;
-	line-height: 130%;
-	color: #1E212C;
-	margin-bottom: 26px;
-}
-.page__image {
-	text-align: center;
-	margin-bottom: 60px;
-}
-.page__image img{
-	max-width: 100%;
-}
-.page__main-text {
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 150%;
-	color: #1E212C;
-	margin-bottom: 24px;
-}
-.page__text {
-	line-height: 160%;
-	margin-bottom: 48px;
-}
-.page__text p{
-	margin-bottom: 22px;
-}
-.page__text ul{
-	margin-bottom: 24px;
-}
-.page__text li{
-	margin-bottom: 4px;
-	padding-left: 32px;
-	background: url('../img/icons/check.svg') 0 6px no-repeat;
-}
-*/
-/* 
-Запобіжник
-min-height: 35px; 
-*/
-/*
-.page__blockquote {
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 150%;
-	color: #1E212C;
-	margin-bottom: 48px;
-
-	background: url('../img/icons/braces.svg') 0 0 no-repeat;
-	padding-left: 58px;
-}
-*/
-
 /* =============== Псевдокласи ================= */
 
 /* Псевдокласи стану */
-
 /*
 :hover
 Звернення до елемента у стані "при наведенні миші"
