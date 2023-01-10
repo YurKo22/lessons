@@ -1,49 +1,90 @@
-body {
+.header {
 }
-
-.list {
+.main {
 }
-.list__item {
+.single-post {
 }
-.list__link {
+.single-post__container {
 }
-
+.single-post__article {
+}
 .article {
-}
-.article__container {
 }
 .article__title {
 }
 .article__image {
 }
-.article__image img {
-}
-.article__pic {
-}
 .article__main-text {
 }
 .article__text {
 }
-.article__text p {
+.homepage {
 }
-.article__text ul {
+.homepage__container {
 }
-.article__text ul li {
+.homepage__about {
 }
-.article__text blockquote {
+.about {
 }
-
-.button {
-  background-color: #794f45;
+.about__image {
 }
-.button_green {
-  background-color: #7a956b;
+.about__subtitle {
 }
-.button_red {
-  background-color: red;
+.about__title {
 }
-
-/* Якщо третій елемент саме тег P */
-.exp p:nth-child(3) {
-  background-color: #7a956b;
+.about__text {
+}
+.homepage__courses {
+}
+.courses {
+}
+.courses__subtitle {
+}
+.courses__title {
+}
+.courses__button {
+}
+.courses__cards {
+}
+.cards {
+}
+.cards__item {
+}
+.cards__image {
+}
+.cards__content {
+}
+.cards__subtitle {
+}
+.cards__title {
+}
+.cards__info {
+}
+.card__subtitle {
+}
+.card__title {
+}
+.card__info {
+}
+.homepage__benefits {
+}
+.benefits {
+}
+.benefits__subtitle {
+}
+.benefits__title {
+}
+.benefits__tabs {
+}
+.tabs {
+}
+.tabs__item {
+}
+.benefits__text {
+}
+.bebefits__text-title {
+}
+.benefits__image {
+}
+.footer {
 }
