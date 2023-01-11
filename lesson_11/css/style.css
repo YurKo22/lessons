@@ -5,7 +5,6 @@ body {
   color: #424551;
   line-height: 1.6;
 }
-
 .wrapper {
   overflow: hidden;
   position: relative;
@@ -24,17 +23,15 @@ body {
   left: 0;
   top: 0;
   padding: 15px;
-  background-color: yellowgreen;
+  background-color: #78f72fc5;
   z-index: 100;
 }
 .header__container {
   max-width: 800px;
   margin: 0 auto;
 }
-
 .header__menu {
 }
-
 .menu {
   font-size: 0;
 }
@@ -50,15 +47,19 @@ body {
   visibility: visible;
   top: 100%;
 }
-
 .menu__link {
   font-size: 16px;
-  color: #fff;
+  color: #000;
   display: inline-block;
-  padding: 5px 0px;
+  padding: 5px 25px;
+}
+.menu__link:hover{
+	text-decoration: underline;
+}
+.menu__sub-menu {
 }
 .sub-menu {
-  background-color: #77608d;
+  background-color: #f0f340c5;
   padding: 15px;
   position: absolute;
   min-width: 180px;
@@ -68,17 +69,42 @@ body {
   visibility: hidden;
   transition: all 0.3s ease 0s;
 }
-
-.sub-menu__item {
+.sub-menu__item:hover {
+  text-decoration: underline;
 }
 .sub-menu__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+.sub-menu__link {
+  font-size: 16px;
+  color: #000;
+}
+.main {
+}
+.main__container {
+}
+.cars {
+}
+.cars__background {
+}
+.cars__road {
+}
+.cars__body {
+}
+.cars__wheels {
+}
+.cars__wheels--back {
+}
+.cars__windows {
+}
+.cars__headlights {
 }
 
+/* 
 .sub-menu__link {
   font-size: 16px;
   color: #fff;
-}
+} */
 
 /*
 .section{
@@ -142,5 +168,3 @@ body {
 	margin-bottom: 10px;
 }
 */
-
-/* Розказати про % */
