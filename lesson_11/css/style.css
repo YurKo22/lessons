@@ -103,21 +103,83 @@ body {
   bottom: 0;
   z-index: 1;
 }
-
-.cars__body img {
+.cars__body {
   width: 600px;
   position: absolute;
-  left: 30vh;
+  left: 35vh;
   bottom: 40px;
   z-index: 2;
 }
+.cars__body img {
+  width: 100%;
+}
 .cars__wheels {
+  left: 600px;
+  position: absolute;
+  bottom: 125px;
+  z-index: 2;
+}
+.cars__wheels img {
+  width: 75px;
+  height: 75px;
 }
 .cars__wheels--back {
+  position: absolute;
+  left: -212px;
+}
+.cars__wheels--front {
+  position: absolute;
+  left: 162px;
 }
 .cars__windows {
+  left: 600px;
+  position: absolute;
+  bottom: 245px;
+  z-index: 2;
+}
+.cars__windows img{
+  width: 90px;
+  height: 58px;
+}
+.cars__windows--back {
+  position: absolute;
+  left: -113px;
+}
+.cars__windows--front {
+  position: absolute;
+  bottom: -60px;
+  left: -5px;
+}
+.cars__windows--back:hover ::before{
+	content: "";
+	background: url('../img/window-back-light.png') 0 0 / 100% no-repeat;
+	width:16px;
+	height: 16px;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	transition: all 0.3s ease 0s;
 }
 .cars__headlights {
+  left: 600px;
+  position: absolute;
+  bottom: 190px;
+  z-index: 2;
+}
+.cars__headlights--back {
+  position: absolute;
+  left: -273px;
+  width: 50px;
+  height: 41px;
+}
+.cars__headlights--front {
+  position: absolute;
+  bottom: -55px;
+  left: 247px;
+}
+.cars__headlights--front img{
+  width: 48px;
+  height: 33px;
 }
 
 /* 
