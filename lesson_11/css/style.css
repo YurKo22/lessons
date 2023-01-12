@@ -9,7 +9,6 @@ body {
   overflow: hidden;
   position: relative;
   min-height: 100%;
-  padding: 50px;
 }
 
 [class*="__container"] {
@@ -23,12 +22,8 @@ body {
   left: 0;
   top: 0;
   padding: 15px;
-  background-color: #78f72fc5;
+  background-color: #355fd3e5;
   z-index: 100;
-}
-.header__container {
-  max-width: 800px;
-  margin: 0 auto;
 }
 .header__menu {
 }
@@ -48,18 +43,18 @@ body {
   top: 100%;
 }
 .menu__link {
-  font-size: 16px;
-  color: #000;
+  font-size: 20px;
+  color: #fff;
   display: inline-block;
   padding: 5px 25px;
 }
-.menu__link:hover{
-	text-decoration: underline;
+.menu__link:hover {
+  text-decoration: underline;
 }
 .menu__sub-menu {
 }
 .sub-menu {
-  background-color: #f0f340c5;
+  background-color: #7e3ef3c5;
   padding: 15px;
   position: absolute;
   min-width: 180px;
@@ -76,8 +71,8 @@ body {
   margin-bottom: 5px;
 }
 .sub-menu__link {
-  font-size: 16px;
-  color: #000;
+  font-size: 20px;
+  color: #fff;
 }
 .main {
 }
@@ -86,11 +81,37 @@ body {
 .cars {
 }
 .cars__background {
+  min-height: 700px;
+  width: 100%;
+  display: block;
+  background: url(../img/mountains.jpg) 0 0 / cover no-repeat;
+  position: absolute;
+  top: -150px;
+  left: 0;
+  z-index: 1;
 }
 .cars__road {
+  height: 300px;
+  width: 100%;
+  display: block;
+  background: url(../img/road.jpg) 0 0 / cover no-repeat;
+  position: absolute;
+  top: 300px;
+  left: 0;
+  z-index: 1;
 }
-.cars__body {
-}
+
+/* .cars__body {
+  min-height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 500px;
+  left: 0;
+  z-index: 2;
+} */
+/* .cars__body img {
+  width: 100%;
+} */
 .cars__wheels {
 }
 .cars__wheels--back {
