@@ -24,7 +24,9 @@
 .example-2,
 .example-3,
 .example-4,
-.example-5 {
+.example-5,
+.example-6,
+.example-7 {
   width: 150px;
   height: 150px;
   background-color: rgb(90, 90, 90);
@@ -33,7 +35,9 @@
 .example-2__item,
 .example-3__item,
 .example-4__item,
-.example-5__item {
+.example-5__item,
+.example-6__item,
+.example-7__item {
   width: 150px;
   height: 150px;
   padding: 15px;
@@ -41,9 +45,11 @@
   text-align: center;
   color: rgb(27, 27, 27);
 }
+.example-1__item {
+  background-color: rgb(255, 186, 57);
+}
 .example-1:hover .example-1__item {
   transform: translate(15px, 15%);
-  background-color: rgb(255, 186, 57);
 }
 .example-2__item {
   background-color: rgb(255, 146, 57);
@@ -64,14 +70,26 @@
   transform: skew(10deg, -15deg);
 }
 .example-5__item {
-  background-color: rgb(114, 168, 250);
+  background-color: rgb(114, 173, 250);
 }
-.example-5__item:hover .example-5__item{
-  transform: matrix(0.9, 0.1, 0.5, 0.5, 30, 30);
+.example-5:hover .example-5__item {
+  transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+}
+.example-6__item {
+  background-color: rgb(139, 114, 250);
+}
+.example-6:hover .example-6__item {
+  transform: translate(10%, 10%) rotate(10deg) scale(0.7) skew(5deg, 5deg);
+}
+.example-7__item {
+  background-color: rgb(184, 69, 230);
+}
+.example-7:hover .example-7__item {
+  transform-origin: 0 0;
+  transform: rotate(-20deg);
 }
 
-
-.example-7 {
+/* .example-7 {
   perspective: 200px;
 }
 .example-7__item {
@@ -80,7 +98,7 @@
 }
 .example-7:hover .example-7__item {
   transform: rotateY(70deg);
-}
+} */
 
 .page__section--matrix {
   transform: matrix(0.9, 0.1, 0.5, 0.5, 30, 30);
