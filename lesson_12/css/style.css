@@ -7,18 +7,17 @@
 }
 
 [class*="__container"] {
-  max-width: 1230px;
+  max-width: 1330px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
 }
-/* --------------------------------------------- */
+/* --------------------- Page Example ------------------------ */
 .page__example {
+  position: relative;
   display: inline-block;
-  margin: 10px auto 50px;
+  margin: 0px auto 20px;
   background-color: rgba(223, 248, 110, 0.418);
-}
-.page__example:not(:last-child) {
-  margin-right: 35px;
+  z-index: 100;
 }
 .example-1,
 .example-2,
@@ -33,7 +32,8 @@
 .example-11,
 .example-12 {
   width: 150px;
-  height: 150px;
+  height: 75px;
+  margin-right: 40px;
   background-color: rgb(90, 90, 90);
 }
 .example-1__item,
@@ -49,8 +49,8 @@
 .example-11__item,
 .example-12__item {
   width: 150px;
-  height: 150px;
-  padding: 15px;
+  height: 75px;
+  padding: 10px;
   transition: all 0.5s ease;
   text-align: center;
   color: rgb(27, 27, 27);
@@ -162,7 +162,7 @@
 .example-12__item--front {
   z-index: 2;
   transform: rotateY(0deg);
-  background-color: #77608d;
+  background-color: #2a2969;
   backface-visibility: hidden;
 }
 .example-12__item--back {
@@ -171,4 +171,125 @@
 }
 .example-12:hover .example-12__item {
   transform: rotateY(-180deg);
+}
+/* ----------- Cars ------------------ */
+
+.cars {
+}
+.cars__background {
+  min-height: 800px;
+  width: 100%;
+  background: url(../img/mountains.jpg) 0 0 / cover no-repeat;
+  position: absolute;
+  bottom: 195px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.cars__road {
+  height: 200px;
+  width: 100%;
+  display: block;
+  background: url(../img/road.jpg) 0 0 / cover no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.cars__body {
+  width: 600px;
+  position: absolute;
+  left: 308px;
+  bottom: 40px;
+  z-index: 2;
+}
+.cars__body img {
+  width: 100%;
+}
+.cars__wheels {
+  left: 600px;
+  position: absolute;
+  bottom: 125px;
+  z-index: 2;
+}
+.cars__wheels img {
+  width: 75px;
+  height: 75px;
+}
+.cars__wheels--back {
+  position: absolute;
+  left: -212px;
+}
+.cars__wheels--front {
+  position: absolute;
+  left: 162px;
+}
+.cars__windows {
+  left: 600px;
+  position: absolute;
+  bottom: 245px;
+  z-index: 2;
+}
+.cars__windows::before {
+  content: "";
+  background: url("../img/windows.png") 0 0 / contain no-repeat;
+  width: 240px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: -145px;
+  transition: all 0.5s ease 0s;
+}
+.cars__windows:hover::before {
+  content: "";
+  background: url("../img/windows-light.png") 0 0 / contain no-repeat;
+  width: 240px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: -145px;
+}
+.cars__headlights {
+  left: 600px;
+  position: absolute;
+  bottom: 190px;
+  z-index: 2;
+}
+.cars__headlights::before {
+  content: "";
+  background: url("../img/headlights-back.png") 0 0 / contain no-repeat;
+  width: 50px;
+  height: 41px;
+  position: absolute;
+  top: 0;
+  left: -273px;
+  transition: all 0.5s ease 0s;
+}
+.cars__headlights:hover::before {
+  content: "";
+  background: url("../img/headlights-back-light.png") 0 0 / contain no-repeat;
+  width: 50px;
+  height: 41px;
+  position: absolute;
+  top: 0;
+  left: -273px;
+}
+.cars__headlights::after {
+  content: "";
+  background: url("../img/headlights-front.png") 0 0 / contain no-repeat;
+  bottom: -60px;
+  left: 247px;
+  width: 48px;
+  height: 37px;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+}
+.cars__headlights:hover::after {
+  content: "";
+  background: url("../img/headlights-front-light.png") 0 0 / contain no-repeat;
+  position: absolute;
+  left: 247px;
+  width: 48px;
+  height: 37px;
 }
