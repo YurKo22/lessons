@@ -26,7 +26,12 @@
 .example-4,
 .example-5,
 .example-6,
-.example-7 {
+.example-7,
+.example-8,
+.example-9,
+.example-10,
+.example-11,
+.example-12 {
   width: 150px;
   height: 150px;
   background-color: rgb(90, 90, 90);
@@ -37,7 +42,12 @@
 .example-4__item,
 .example-5__item,
 .example-6__item,
-.example-7__item {
+.example-7__item,
+.example-8__item,
+.example-9__item,
+.example-10__item,
+.example-11__item,
+.example-12__item {
   width: 150px;
   height: 150px;
   padding: 15px;
@@ -77,209 +87,88 @@
 }
 .example-6__item {
   background-color: rgb(139, 114, 250);
+  padding: 15px 10px;
 }
 .example-6:hover .example-6__item {
   transform: translate(10%, 10%) rotate(10deg) scale(0.7) skew(5deg, 5deg);
 }
 .example-7__item {
   background-color: rgb(184, 69, 230);
+  padding: 15px 10px;
 }
 .example-7:hover .example-7__item {
   transform-origin: 0 0;
   transform: rotate(-20deg);
 }
-
-/* .example-7 {
+.example-8__item {
+  background-color: rgb(230, 69, 190);
+}
+.example-8 {
   perspective: 200px;
 }
-.example-7__item {
-  transform-origin: 0 0;
-  background-color: rgb(114, 168, 250);
+.example-8:hover .example-8__item {
+  transform: rotateX(45deg);
 }
-.example-7:hover .example-7__item {
-  transform: rotateY(70deg);
-} */
-
-.page__section--matrix {
-  transform: matrix(0.9, 0.1, 0.5, 0.5, 30, 30);
+.example-9__item {
+  background-color: rgb(211, 23, 86);
 }
-.page__section--all-2d {
-  transform: translate(10%, 10%) rotate(10deg) scale(0.7) skew(5deg, 5deg);
+.example-9 {
+  perspective: 400px;
+  perspective-origin: 0 0;
 }
-.page__section--transform-origin {
-  transform-origin: 0 0;
-  transform: rotate(20deg);
+.example-9:hover .example-9__item {
+  transform: rotateX(60deg);
 }
-
-/* ----------------------------------------------------- */
-/*
-translate (x, y)
-Зміщує елемент на нове місце,
-переміщаючи відносно початкового 
-положення об'єкта вправо та вниз,
-використовуючи координати X та Y. 
-Записується так translate (x,y).
-*/
-.section__item {
-  /* transform: translate(20%,20%); */
-  /* transform: translateY() */
-  /* transform: translateX() */
-  /* transform: translate(100%, 0%); */
-  /*
-	position: relative;
-	top: 20%;
-	left: 20%;
-	*/
+.example-10__item {
+  background-color: rgb(182, 2, 2);
+  padding: 15px 10px;
 }
-
-/*
-Matrix (a, c, b, d, x, y)
-Дозволяє об'єднати кілька функцій 2D-трансформацій в одній.
-*/
-.section__item {
-  /* transform: matrix(1, 0, 0, 1, 0, 0); */
+.example-10 {
+  perspective: 400px;
 }
-/*
-Множинні 2D трансформації
-*/
-.section__item {
-  /* transform: translate(20%, 20%) scale(0.5) rotate(30deg) skew(20deg, 20deg); */
+.example-10:hover .example-10__item {
+  transform: translate3d(30px, 30px, 30px) scale3d(1, 1, 1)
+    rotate3d(1, 1, 1, 30deg);
 }
-
-/*
-Transform-origin
-Дозволяє змістити центр трансформації,
-щодо якого відбувається зміна 
-положення/розміру/форми елемента.
-*/
-.section__item {
-  /* 
-	transform-origin: 0 0;
- 	transform: rotate(20deg);
-	*/
+.example-11__item {
+  background-color: rgb(97, 66, 25);
+  padding: 15px 10px;
+  transform: rotateX(0deg);
 }
-
-/*
-Perspective,
-perspective-origin
-Встановлення глибини та зміна 
-точки початку координат.
-!! Задаються батьківському елементу!
-*/
-.section__body {
-  /*
-	perspective: 300px;
-	perspective-origin:center;
-	*/
+.example-11 {
+  perspective: 400px;
+  transform-style: preserve-3d;
+  background-color: rgba(90, 90, 90, 0.616);
 }
-.section__item {
-  /*
-	transform: rotateX(50deg);
-	*/
+.example-11:hover .example-11__item {
+  transform: rotateX(50deg);
 }
-
-/*
-3D
-За аналогією зі своїм 2D братом,
-це значення визначає переміщення елемента,
-але в 3D-просторі. Крім осі X та Y 
-додається вісь Z.
-!! вісь Z працює з перспективою
-*/
-.section__item {
-  /* transform: translate3d(20px, 20px, 20px); */
-  /* transform: scale3d(1,1,1); */
-  /* transform: rotate3d(1, 1, 1, 0deg); */
-  /* transform: translate3d(20px, 20px, 20px) scale3d(1, 1, 1); */
-}
-
-/*
-Transform-style
-Визначає, як дочірні елементи мають 
-відображатися у 3D-просторі.
-! ! Задається батьківському елементу разом з perspective !
-*/
-.section__body {
-  /*
-	perspective: 300px;
-	transform-style: preserve-3d;
-	*/
-}
-.section__item {
-  /*
-	transform: rotateY(180deg);
-	transition: all 0.3s ease 0s;
-	*/
-}
-.section__body:hover .section__item {
-  /* 
-	transform: rotateY(0deg);
-	*/
-}
-
-/*
-Backface-visibility
-Відображення зворотного боку об'єкта.
-*/
-
-.section__item {
-  /* backface-visibility: hidden; */
-}
-
-/*
-.expl {
-	position: relative;
-}
-.expl__item {
-	height: 30px;
-	background-color: #77608d;
-	width: 90px;
-	position: absolute;
-	left: 50%;
-	top: 0;
-
-	transform: translate(-50%,0px);
-}
-*/
-
-.link {
-  text-transform: uppercase;
-  color: #fff;
-  position: relative;
-  padding-right: 30px;
-  /* Не працює з рядковими */
-  transform: rotate(-20deg);
-}
-.link::before,
-.link::after {
-  content: "";
+.example-12 {
+  perspective: 400px;
   position: absolute;
-  width: 18px;
-  height: 2px;
-  background-color: #fff;
-  transition: all 0.3s ease 0s;
-  border-radius: 2px;
 }
-.link::before {
-  top: 5px;
-  right: 0;
-  transform: rotate(45deg);
+.example-12__item {
+  transform-style: preserve-3d;
 }
-.link::after {
-  top: 5px;
-  right: -12px;
-  transform: rotate(-45deg);
+.example-12__item--front,
+.example-12__item--back {
+  padding: 10px 5px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
-.link:hover {
-  color: red;
+.example-12__item--front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  background-color: #77608d;
+  backface-visibility: hidden;
 }
-.link:hover::before {
-  transform: rotate(-45deg);
+.example-12__item--back {
+  transform: rotateY(-180deg);
+  background-color: rgba(121, 79, 69, 0.5);
 }
-.link:hover::after {
-  transform: rotate(45deg);
-}
-
-.expl:hover .expl__item {
-  color: red;
+.example-12:hover .example-12__item {
+  transform: rotateY(-180deg);
 }
