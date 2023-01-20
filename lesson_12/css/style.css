@@ -7,7 +7,7 @@
 }
 
 [class*="__container"] {
-  max-width: 1330px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 15px;
 }
@@ -203,10 +203,24 @@
   left: 308px;
   bottom: 40px;
   z-index: 2;
+  transition: width 5.3s ease 0s;
 }
 .cars__body img {
   width: 100%;
 }
+.cars__box:hover .cars__wheels,
+.cars__box:hover .cars__body,
+.cars__box:hover .cars__windows,
+.cars__box:hover .cars__headlights {
+  transform: translate(350px);
+  transition: all 3.0s ease 1s;
+}
+.cars__box:hover .cars__wheels--front,
+.cars__box:hover .cars__wheels--back{
+  transform: rotate(300deg);
+  transition: all 3.0s ease 1s;
+}
+
 .cars__wheels {
   left: 600px;
   position: absolute;
