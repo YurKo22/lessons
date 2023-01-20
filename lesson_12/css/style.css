@@ -162,7 +162,7 @@
 .example-12__item--front {
   z-index: 2;
   transform: rotateY(0deg);
-  background-color: #2a2969;
+  background-color: #515ea8;
   backface-visibility: hidden;
 }
 .example-12__item--back {
