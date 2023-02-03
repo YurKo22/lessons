@@ -204,8 +204,6 @@ CSS – переходи забезпечують зміну значень ін
   margin-bottom: 50px;
 }
 
-.block {
-}
 .block__item {
   width: 150px;
   height: 150px;
@@ -367,8 +365,6 @@ CSS animation & @keyframes
 та @keyframes дозволяє нам створювати більш складні сценарії анімацій.
 */
 
-.block-animation {
-}
 .block-animation__item {
   width: 150px;
   height: 150px;
