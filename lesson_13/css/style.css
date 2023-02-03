@@ -89,19 +89,27 @@
 }
 .example-4__item {
   background-color: rgb(59, 255, 190);
+  transition-property: background-color, box-shadow;
+  transition-duration: 1s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in;
+  transition: transform 1.5s linear 1s;
 }
 .example-4:hover .example-4__item {
-  transform: skew(10deg, -15deg);
+  background-color: rgb(114, 139, 250);
+  box-shadow: 3px 3px 3px #3c354a;
+  transform: skew(5deg, -10deg);
 }
 .example-5__item {
-  background-color: rgb(114, 173, 250);
+  background-color: rgb(114, 139, 250);
   padding: 20px 25px;
 }
 .example-5:hover .example-5__item {
+  background-color: rgb(177, 114, 250);
   transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
 }
 .example-6__item {
-  background-color: rgb(139, 114, 250);
+  background-color: rgb(177, 114, 250);
   padding: 20px 25px;
 }
 .example-6:hover .example-6__item {
@@ -186,76 +194,11 @@
   transform: rotateY(-180deg);
 }
 /*
-CSS – переходи чи CSS – transitions можуть застосовуватися 
-всім елементам і навіть до псевдоэлементам. Використовуються 
-для пожвавлення нашої верстки. 
-Що, у свою чергу, призводить до поліпшення взаємодії з користувачем,
-як правило шляхом приємної анімованої реакції на його дії. 
-Наприклад – наведення та натискання на кнопку.
-Також властивості transition можна використовувати для 
-побудови нескладних сценаріїв анімації. Фактично,
-CSS – переходи забезпечують зміну значень інших властивостей 
-із певною анімацією та сценарієм.
-*/
-.page {
-  padding: 20px;
-}
-.page__block {
-  margin-bottom: 50px;
-}
+	Універсальний запис transition*/
+transition: all 0.5s ease 0.5s;
 
-.block__item {
-  width: 150px;
-  height: 150px;
-  background-color: #7a956b;
-
-  /* 1000ms = 1s */
-
-  /*
-	transition-duration
-	Визначає проміжок часу, 
-	протягом якого має здійснюватись перехід. 
-	Власне - тут ми вказуємо час за яке 
-	одне значення якості переходить (анімується)
-	в інше. Властивість не успадковується.
-	*/
-  transition-duration: 0.5s;
-  /*
-	Містить назву CSS-властивостей,
-	до яких буде використано ефект переходу. 
-	Значення властивості може містити як одну 
-	властивість, так і список властивостей 
-	через кому. Властивість не успадковується.
-	*/
-  transition-property: all;
-
-  /*
-	transition-delay
-	Затримка виконання переходу. Дозволяє зробити 
-	так, щоб зміна якості відбувалася не миттєво,
-	а з деякою затримкою. Час затримки переходу 
-	вказується у секундах або мілісекундах. 
-	Властивість не успадковується.
-	*/
-  transition-delay: 0.5s;
-
-  /*
-	transition-timing-function
-	Задає стиль нашого переходу,
-	тобто якийсь сценарій,
-	за яким здійсняться анімація.
-	*/
-  transition-timing-function: ease;
-
-  /*
-	Універсальний запис
-	transition
-	*/
-  transition: all 0.5s ease 0.5s;
-
-  /* Декілька параметрів */
-  /* transition: width 0.8s ease 0s, height 0.5s ease-in 0.8s; */
-}
+/* Декілька параметрів */
+/* transition: width 0.8s ease 0s, height 0.5s ease-in 0.8s; */
 .block:hover .block__item {
   width: 200px;
   transform: translate(10%, 10%);
