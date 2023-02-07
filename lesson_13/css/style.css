@@ -65,7 +65,7 @@
 }
 .example-2__item {
   background-color: rgb(250, 247, 101);
-  transition-property: background-color, transition;
+  transition-property: background-color, transform;
   transition-duration: 1.5s;
   transition: border-radius 2s;
 }
@@ -92,7 +92,7 @@
   transition-property: background-color, box-shadow;
   transition-duration: 1s;
   transition-delay: 0s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
   transition: transform 1.5s linear 1s;
 }
 .example-4:hover .example-4__item {
@@ -106,8 +106,17 @@
 }
 .example-5:hover .example-5__item {
   background-color: rgb(177, 114, 250);
-  transform: matrix(0.5, 0.1, 0.1, 0.5, 10, 15);
+  animation-name: link-rotate;
+  animation-duration: 2s;
 }
+@keyframes link-rotate {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
 .example-6__item {
   background-color: rgb(177, 114, 250);
   padding: 20px 25px;
@@ -193,24 +202,8 @@
 .example-12:hover .example-12__item {
   transform: rotateY(-180deg);
 }
-/*
-	Універсальний запис transition*/
-transition: all 0.5s ease 0.5s;
 
-/* Декілька параметрів */
 /* transition: width 0.8s ease 0s, height 0.5s ease-in 0.8s; */
-.block:hover .block__item {
-  width: 200px;
-  transform: translate(10%, 10%);
-  background-color: #77608d;
-  height: 200px;
-}
-.link {
-  color: #fff;
-  transition: all 0.3s ease 0s;
-  position: relative;
-  padding-left: 25px;
-}
 .link::before {
   content: "";
   width: 15px;
