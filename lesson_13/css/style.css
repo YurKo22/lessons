@@ -53,6 +53,7 @@
   padding: 20px;
   text-align: center;
   color: rgb(27, 27, 27);
+  cursor: pointer;
 }
 .example-1__item {
   background-color: rgb(57, 136, 255);
@@ -241,6 +242,87 @@
     transform: rotate(-360deg);
   }
 }
+/* ----------- Tasks ---------------- */
+.example-13 {
+  width: 600px;
+  height: 150px;
+  margin-left: 27%;
+  background-color: rgba(90, 90, 90, 0.103);
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 100px;
+}
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  animation: title 1s ease forwards;
+  transform: translate(0px, 50%);
+  opacity: 0;
+}
+.title:not(:last-child) {
+  margin-bottom: 5px;
+}
+.sub-title {
+  font-size: 20px;
+  animation: title 1s ease 0.5s forwards;
+  transform: translate(0px, 50%);
+  opacity: 0;
+}
+.sub-title:not(:last-child) {
+  margin-bottom: 5px;
+}
+.text {
+  animation: title 1s ease 1s forwards;
+  line-height: 1.5;
+  transform: translate(0px, 50%);
+  opacity: 0;
+}
+
+@keyframes title {
+  0% {
+  }
+  100% {
+    transform: translate(0px, 0%);
+    opacity: 1;
+  }
+}
+
+.example-14 {
+  width: 150px;
+  height: 45px;
+  margin-left: 40%;
+  border-radius: 50%;
+  background-color: rgba(42, 92, 9, 0.411);
+  cursor: pointer;
+}
+.example-14__item {
+  width: 150px;
+  color: #000;
+  position: relative;
+}
+.example-14__item::before {
+  content: "";
+  background: url(../img/images.png) 0 0 / contain no-repeat;
+  position: absolute;
+  padding-left: 30px;
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  top: 5px;
+  z-index: 1;
+}
+.example-14:hover .example-14__item {
+  width: 150px;
+  height: 150px;
+  background: url(../img/ukraine.png) 0 0 / cover no-repeat;
+  box-shadow: 4px 4px 4px #3c354a;
+  position: absolute;
+  z-index: 200;
+  top: -20px;
+  left: 0;
+  border-radius: 15%;
+  transition: background 3s ease 1s;
+}
 
 /* ----------- Tank ------------------ */
 .tank__background {
@@ -289,107 +371,7 @@
 }
 
 /* ============================================================ */
-/*
-.car {
-	width: 200px;
-	height: 100px;
-	background-color: #794f45;
-	border-radius: 50px 50px 0 0;
-	position: relative;
-	animation: car-ride 8s linear forwards;
-}
-.car__wheels {
-	position: absolute;
-	bottom: 20px;
-	width: 100%;
-	left: 0;
-}
-.car__wheel {
-	width: 40px;
-	height: 40px;
-	background-color: #666;
-	position: absolute;
-	border-radius: 50%;
-	outline: 5px dashed #000;
-	animation: wheels 8s linear forwards;
-}
-.car__wheel:first-child{
-	left: 0;
-}
-.car__wheel:last-child {
-	right: 0;
-}
-*/
-/*
-@keyframes wheels{
-	0% {
-		transform: rotate(0deg);
-	}
-	20%{
-		transform: rotate(360deg);
-	}
-	80%{
-		transform: rotate(360deg);
-	}
-	100%{
-		transform: rotate(0deg);
-	}
-}
-@keyframes car-ride {
-	0% {
-		transform: translate(-200%, 0px);
-	}
-	20%{
-		transform: translate(100px, 0px);
-	}
-	80%{
-		transform: translate(100px, 0px);
-	}
-	100% {
-		transform: translate(1000px, 0px);
-	}
-}
-*/
-
-/*
-.title {
-	font-weight: 700;
-	font-size: 40px;
-	animation: title 1s ease forwards;
-	transform: translate(0px, 50%);
-	opacity: 0;
-}
-
-.title:not(:last-child){
-	margin-bottom: 20px;
-}
-.sub-title {
-	font-size: 24px;
-	animation: title 1s ease 0.5s forwards;
-	transform: translate(0px, 50%);
-	opacity: 0;
-}
-.sub-title:not(:last-child) {
-	margin-bottom: 15px;
-}
-.text {
-	animation: title 1s ease 1s forwards;
-	line-height: 1.5;
-	transform: translate(0px, 50%);
-	opacity: 0;
-}
-
-@keyframes title {
-	0% {
-	}
-	100% {
-		transform: translate(0px, 0%);
-		opacity: 1;
-	}
-}
-*/
-
-.newton {
+/* .newton {
   width: 300px;
   margin: 0 auto;
   border-top: 10px solid #fff;
@@ -516,4 +498,4 @@
   100% {
     transform: rotate(-10deg);
   }
-}
+} */
