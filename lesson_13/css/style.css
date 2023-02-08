@@ -208,15 +208,38 @@
 .example-11__item {
   background-color: rgb(97, 66, 25);
   padding: 20px 25px;
+  transition: width 0.5s ease 1s, height 0.5s ease 1s, margin 0.5s ease 1s;
 }
 .example-11:hover .example-11__item {
   background-color: rgb(199, 137, 4);
+  box-shadow: 4px 4px 4px #3c354a;
+  animation: circle 1s linear 3 normal running 1.5s;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
 }
 .example-12__item {
   background-color: rgb(199, 137, 4);
+  transition: border-radius 0.5s ease 0s, box-shadow 0.5s ease 0s,
+    width 0.5s ease 0s;
 }
 .example-12:hover .example-12__item {
+  width: 100px;
   background-color: rgb(57, 136, 255);
+  box-shadow: 4px 4px 4px #3c354a;
+  border-radius: 50px;
+  animation: rotate3 2s ease-in infinite normal running 0s backwards;
+}
+@keyframes rotate3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 /* ----------- Tank ------------------ */
@@ -236,7 +259,6 @@
   left: 0;
   top: 200px;
   z-index: 2;
-  transition: all 5.3s ease 0s;
   animation: translate-tank 15s linear infinite normal;
 }
 @keyframes translate-tank {
@@ -244,21 +266,20 @@
     transform: translate(0, 0px);
   }
   20% {
-    transform: translate(175px, 75px); 
+    transform: translate(175px, 75px);
   }
   40% {
     transform: translate(350px, 150px);
   }
   60% {
-    transform: translate(550px, 300px);
+    transform: translate(550px, 250px);
   }
   80% {
-    transform: translate(700px, 450px);
+    transform: translate(750px, 350px);
   }
   100% {
-    transform: translate(800px, 600px);
+    transform: translate(900px, 500px);
   }
-  
 }
 .tank__body:hover {
   animation-play-state: paused;
@@ -268,104 +289,6 @@
 }
 
 /* ============================================================ */
-
-/*
-CSS animation & @keyframes
-
-Як і CSS властивість плавних переходів transition,
-про яку ми говорили в попередньому уроці,
-властивість animation покликана зробити нашу верстку динамічнішою,
-оживити її для кращої взаємодії з 
-користувачем та створення WOW ефекту. 
-
-Але на відміну від CSS переходів,
-створення анімації базується на ключових кадрах @keyframes,
-які дозволяють автоматично відтворювати та повторювати 
-ефекти протягом заданого часу, а також зупиняти 
-анімацію за певною подією. 
-
-Іншими словами, використання конструкції animation 
-та @keyframes дозволяє нам створювати більш складні сценарії анімацій.
-*/
-
-.block-animation__item {
-  width: 150px;
-  height: 150px;
-  background-color: #77608d;
-
-  /*
-	animation-name
-	Визначає список анімацій (ключових кадрів),
-	що застосовуються до елемента. Можна вказати через кому. 
-	Причому пріоритет останній запис.
-	*/
-  animation-name: rotate-block;
-
-  /*
-	animation-duration
-	Відповідає за тривалість анімації.
-	*/
-  animation-duration: 1s;
-
-  /*
-	animation-timing-function
-	Встановлює сценарій розвитку анімації між ключовими кадрами.
-	*/
-  animation-timing-function: linear;
-
-  /*
-	animation-iteration-count
-	Відповідає за повтор відтворення ключових кадрів.
-	*/
-  animation-iteration-count: 1;
-
-  /*
-	animation-direction
-	Визначає напрямок та тип відтворення ключових кадрів.
-
-	normal - за замовченням
-	*/
-  animation-direction: normal;
-  /*
-	animation-play-state
-	Дозволяє запускати або зупиняти анімацію за подією.
-	*/
-  animation-play-state: running;
-
-  /*
-	animation-delay
-	Відповідає за затримку перед відтворенням.
-	*/
-  animation-delay: 0s;
-
-  /*
-	animation-fill-mode
-	Визначає,
-	які значення анімованих css властивостей 
-	застосовуються до об'єкта після завершення анімації.
-	*/
-  animation-fill-mode: forwards;
-
-  /*
-	Універсальний запис
-	animation
-	*/
-  animation: rotate-block 1s linear 1 normal running 0s forwards;
-}
-
-.block-animation__item:hover {
-  animation-play-state: paused;
-}
-
-/* Сценарій анімації */
-@keyframes rotate-block {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(200px, 0);
-  }
-}
 /*
 .car {
 	width: 200px;
