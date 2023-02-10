@@ -137,12 +137,48 @@ body {
   border: 2px solid rgb(1, 56, 1);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
-.item-order {
+.item-order:nth-child(1) {
+  order: 2;
+}
+.item-order:nth-child(2) {
+  order: 1;
+}
+.item-order:nth-child(3) {
+  order: 4;
+}
+.item-order:nth-child(4) {
+  order: 3;
 }
 .item-order__text {
   font-size: 30px;
   font-weight: 700;
 }
+/* --------------- Page reverse ---------------- */
+.page__reverse {
+}
+.reverse {
+}
+.reverse__container {
+}
+.reverse__title {
+}
+.title {
+}
+.reverse__block {
+}
+.reverse__item {
+}
+.item-reverse {
+}
+.item-card__image {
+}
+.item-reverse__content {
+}
+.item-reverse__title {
+}
+.item-card__text {
+}
+
 
 /* ------------------------------------------ */
 /*
