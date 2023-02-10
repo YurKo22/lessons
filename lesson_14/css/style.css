@@ -61,8 +61,53 @@ body {
   text-decoration: underline;
 }
 /* --------------- Page cards ---------------------- */
-
-
+.page__cards {
+}
+.cards {
+  padding: 50px 0px;
+}
+.cards__title {
+}
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.cards__block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  row-gap: 20px;
+}
+.cards__column {
+  flex: 0 1 33.3%;
+  padding: 0 15px;
+}
+.cards__item {
+  min-height: 100%;
+  background-color: rgb(78, 74, 74);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}
+.cards__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.cards__image img {
+  max-width: 100%;
+}
+.cards__text {
+  font-size: 18px;
+  font-weight: 500;
+}
+.links {
+  text-decoration: underline;
+  color: rgb(223, 223, 223);
+}
 
 /* =============================================================== */
 
