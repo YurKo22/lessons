@@ -267,7 +267,34 @@ body {
     transform: rotate(360deg);
   }
 }
-
+/* ------------- Page link ---------------- */
+.link {
+  padding: 50px 0px;
+}
+.link__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+.block-link {
+  background: rgba(27, 36, 59, 0.329);
+  padding: 20px;
+}
+.block-link__title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.block-link__link {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(206, 206, 206);
+  text-decoration: underline;
+}
+.block-link__text {
+  font-size: 18px;
+  font-weight: 500;
+}
 /* --------------- Footer --------------------- */
 .footer__container {
   min-height: 90px;
@@ -302,6 +329,7 @@ body {
     background-position: 80% 0%;
   }
 }
+
 /* ------------------------------------------ */
 /*
 vertical-align
@@ -558,7 +586,7 @@ order
 /* 
 Приклад з width
 Приклад з текстом та псевдоелементом */
-.link {
+/* .link {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: yellowgreen;
   display: inline-flex;
@@ -571,7 +599,7 @@ order
   width: 20px;
   height: 20px;
   background-color: #000;
-}
+} */
 
 /* 
 Приклад з width №2
