@@ -1,34 +1,68 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
 
-body{
-	font-family: "Lato";
-	color: #424551;
+body {
+  font-family: "Lato";
+  color: #424551;
 }
 
-.wrapper{
-	overflow: hidden;
-	min-height: 100%;
-	position: relative;
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.wrapper > main{
-	flex-grow: 1;
+.wrapper > main {
+  flex-grow: 1;
 }
 /* ============================ */
 
-[class*="__container"]{
-	max-width: 1260px;
-	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
+[class*="__container"] {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-/* ============================ */
-.page{}
-.page__main {}
-/* ============================ */
+/* ============ Sections ================ */
+.page {
+}
+.page__main {
+}
+/* ============= Header =============== */
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+}
+
+.header__container {
+}
+.header__logo {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+}
+.menu__item {
+}
+.menu__link {
+}
+.header__actions {
+}
+.actions-header {
+}
+.actions-header__button {
+}
+.button {
+}
+.actions-header__authorization {
+}
+
+/* .header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -77,9 +111,9 @@ body{
 }
 .actions-header__auth:hover span{
 	text-decoration: underline;
-}
+} */
 /* ============================ */
-.main-block {
+/* .main-block {
 	position: relative;
 	padding: 200px 0px 80px 0px;
 	background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
@@ -175,23 +209,23 @@ body{
 .body-main__button {}
 .body-main__media {
 	flex: 0 1 50%;
-}
+} */
 .body-main__image {
-	/* max-width: 602px; */
+  /* max-width: 602px; */
 
-	/* Дуже цікавий підхід */
+  /* Дуже цікавий підхід */
 
-	/* Якщо відсоток від ширини об'єкту */
-	max-width: 107.8%;
-	transform: translate(7.8%,0px);
+  /* Якщо відсоток від ширини об'єкту */
+  max-width: 107.8%;
+  transform: translate(7.8%, 0px);
 
-	/* Якщо конкретне значення*/
-	/*
+  /* Якщо конкретне значення*/
+  /*
 	max-width: 100%;
 	margin-right: -47px;
 	*/
 }
-
+/* 
 .advantages-main {
 	display: flex;
 	gap: 20px;
@@ -273,6 +307,6 @@ body{
 	height: 137px;
 	bottom:18%;
 	right: -1.5%;
-}
+} */
 
 /* ============================ */
