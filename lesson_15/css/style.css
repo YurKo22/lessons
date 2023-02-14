@@ -284,14 +284,17 @@ body {
 }
 /* =========== Page About ================= */
 .about-block {
+  position: relative;
   padding-top: 178px;
   margin-bottom: 180px;
 }
 .about-block__container {
   display: flex;
+  z-index: 2;
 }
 .about-block__media {
   flex: 0 1 57%;
+  z-index: 2;
 }
 .about-block__image {
   min-width: 100%;
@@ -302,33 +305,67 @@ body {
   padding-left: 135px;
 }
 .about-block__text {
+  margin-bottom: 22px;
 }
 .about-block__subtitle {
   font-weight: 700;
-  line-height: 1.5%;
+  line-height: 1.5;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #1e212c;
   margin-bottom: 8px;
 }
 .about-block__title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.3;
+  color: #1e212c;
+  margin-bottom: 40px;
 }
 .about-block__list {
+  color: #424551;
 }
 .about-block__item {
+  position: relative;
+  line-height: 1.6;
+  padding-left: 32px;
+}
+.about-block__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.about-block__item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 22px;
+  background: url("../img/icons/check.svg") 0 7px no-repeat;
+  left: 0;
 }
 .about-block__actions {
 }
-.about-block__button {
-}
-.button {
-}
 .about-block__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .decor-about {
 }
 .decor-about__item {
+  position: absolute;
 }
 .decor-about__item--1 {
+  background: url("../img/about/decor/dots.svg") 0 0 no-repeat;
+  width: 132px;
+  height: 188px;
+  top: 32.2%;
 }
 .decor-about__item--2 {
+  background: url("../img/about/decor/circles.svg") 0 0 no-repeat;
+  width: 287px;
+  height: 287px;
+  right: -14.5%;
+  bottom: 0;
 }
+/* ------------------------------------------- */
