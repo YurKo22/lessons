@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="page">
+				<!-- Приклади -->
+				<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+					<div class="form__line">
+						<label for="name" class="form__label">Введіть ім'я</label>
+						<input id="name" required autocomplete="off" type="text" name="name" placeholder="Введіть ім'я" class="form__input">
+					</div>
+					<div class="form__line">
+						<label for="name" class="form__label">Введіть пароль</label>
+						<input id="name" required autocomplete="off" type="password" name="pass" placeholder="Введіть пароль" class="form__input">
+					</div>
+					<div class="form__line">
+						<!-- Кастомний чекбокс -->
+						<div class="checkbox">
+							<input id="car" autocomplete="off" type="checkbox" value="yes" name="car" class="checkbox__input">
+							<label for="car" class="checkbox__label"><span class="checkbox__text">Є тачка?</span></label>
+						</div>
+					</div>
+					<div class="form__line">
+						<select multiple name="list">
+							<option value="1">Пункт 1</option>
+							<option value="2">Пункт 2</option>
+							<option value="3">Пункт 3</option>
+							<option value="4">Пункт 4</option>
+							<option value="5">Пункт 5</option>
+						</select>
+					</div>
+					<div class="form__line">
+						<div class="form__title">Улюблена тваринка</div>
+						<!-- Тип radio - одиночний вибір -->
+						<!-- Для однієї групи радіо кнопок має бути одинакове значення атрибуту name -->
+						<div class="form__radio">
+							<input checked class="form__input form__input_radio" id="pet-01" required autocomplete="off" value="cat" name="pet" type="radio">
+							<label class="form__label" for="pet-01">Кішка</label>
+						</div>
+						<div class="form__radio">
+							<input class="form__input form__input_radio" id="pet-02" required autocomplete="off" name="pet" value="dog" type="radio">
+							<label class="form__label" for="pet-02">Собака</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<button type="submit" class="form__button">Надіслати</button>
+						<input type="hidden" value="dsv;kljhsdf98798j" name="iam-hidden">
+					</div>
+				</form>
+
+				<!-- 
+					Сервер очікує:
+					name та pass
+					ex. name=Золтан&pass=123456
+				 -->
+
+
+
+				<!-- Головний (батьківський) блок форми -->
+				<!-- Атрибут action - "адреса" сервера. Не може бути пустим, варто ставити заглушку (#) -->
+				<!-- 
+				Атрибут method - метод передачі даних 
+				GET (за замовченням) - безпосередньо в адресному рядку
+				POST - приховано
+
+				Атрибут enctype - кодування даних під час відправки на сервер.
+				Для передачі файлів використовуємо - multipart/form-data
+				Детальніше: https://www.w3schools.com/tags/att_form_enctype.asp
+
+				Формат передачі данних з HTML-форми:
+				(так звана пара - ім'я та значення)
+				name=value
+
+				На сервері обробляються імена та їх значення
+				-->
+				<form class="form" method="POST" enctype="multipart/form-data" action="#">
+					<!-- 
+					input - Елемент вводу даних 
+					Атрибут type - тип елементу вводу даних (Усі типи https://www.w3schools.com/html/html_form_input_types.asp)
+					Атрибут name - ім'я поля (даних)
+					Атрибут value - значення поля (дані)
+					Атрибут placeholder - підпис поля
+					Атрибут autocomplete - дозволяє (за замовченням) / забороняє (значення off) автозаповнення поля
+					Атрибут required - обо'язково для заповнення
+					Атрибут tabindex - керує навігацією за допомогою TAB
+					Атрибут checked (для деяких типів) - вибраний за замовченням
+					
+					-->
+					<div class="form__line">
+						<!-- Окремий підпис поля вводу -->
+						<!-- рядковий тег  -->
+						<!-- <label class="form__label" for="">Я окремий підпис</label> -->
+					</div>
+
+
+					<div class="form__line">
+						<!-- Тип text - Однорядковий ввід даних-->
+						<label class="form__label" for="age-01">Введіть ваш вік</label>
+						<input class="form__input" id="age-01" autocomplete="off" placeholder="Введіть ваш вік" name="age" type="text">
+					</div>
+					<div class="form__line">
+						<!-- Тип email - Однорядковий ввід поштової адреси -->
+						<label class="form__label" for="email-01">Введіть ваш E-mail</label>
+						<input class="form__input" id="email-01" autocomplete="off" placeholder="Введіть ваш E-mail" name="mail" type="email">
+					</div>
+					<div class="form__line">
+						<!-- Тип hidden - Приховане поле. Використовується разом з value -->
+						<input class="form__input" name="token" value="slklrghakj" type="hidden">
+					</div>
+					<div class="form__line">
+						<!-- Тип tel - поле вводу телефонного номеру -->
+						<input class="form__input" autocomplete="off" placeholder="Введіть ваш телефон" name="phone" type="tel">
+					</div>
+					<div class="form__line">
+						<!-- Тип password - поле вводу паролю  -->
+						<input class="form__input" autocomplete="off" placeholder="Введіть ваш пароль" name="pass" type="password">
+					</div>
+					<div class="form__line">
+						<!-- Тип number - поле вводу числа -->
+						<input class="form__input" autocomplete="off" placeholder="Введіть ваше число" name="digi" type="number">
+					</div>
+					<div class="form__line">
+						<!-- Тип color - поле вибору кольору -->
+						<input class="form__input" autocomplete="off" name="color" value="#ffffff" type="color">
+					</div>
+					<div class="form__line">
+						<!-- Тип search - поле вибору кольору -->
+						<input class="form__input" autocomplete="off" name="search" placeholder="Введіть пошуковий запит" type="search">
+					</div>
+					<div class="form__line">
+						<!-- Тип search - поле вибору дати -->
+						<input class="form__input" autocomplete="off" name="date" type="date">
+					</div>
+					<div class="form__line">
+						<!-- Тип range - поле вибору значення -->
+						<input class="form__input" autocomplete="off" name="range" type="range">
+					</div>
+					<div class="form__line">
+						<!-- Тип checkbox - множинний вибір -->
+						<input id="car-01" class="form__input form__input_chk" required autocomplete="off" name="car" type="checkbox">
+						<label class="form__label" for="car-01">Є авто?</label>
+					</div>
+					<div class="form__line">
+						<!-- Тип checkbox - множинний вибір -->
+						<input id="home-01" checked class="form__input form__input_chk" required autocomplete="off" name="car" type="checkbox">
+						<label class="form__label" for="home-01">Є де жити?</label>
+					</div>
+					<div class="form__line">
+						<div class="form__title">Улюблена тваринка</div>
+						<!-- Тип radio - одиночний вибір -->
+						<!-- Для однієї групи радіо кнопок має бути одинакове значення атрибуту name -->
+						<!-- Варто вказувати значення атрибуту value -->
+						<div class="form__radio">
+							<input checked class="form__input form__input_radio" id="pet-01" required autocomplete="off" value="cat" name="pet" type="radio">
+							<label class="form__label" for="pet-01">Кішка</label>
+						</div>
+						<div class="form__radio">
+							<input class="form__input form__input_radio" id="pet-02" required autocomplete="off" name="pet" value="dog" type="radio">
+							<label class="form__label" for="pet-02">Собака</label>
+						</div>
+					</div>
+					<div class="form__line">
+						<!-- Тип file - додати файл (файли) 
+							Атрибут multiple - додавання групи файлів
+							Атрибут accept - фільтрує формати файлів
+						-->
+						<input class="form__input" name="file" accept="image/png, image/jpeg" multiple type="file">
+					</div>
+					<div class="form__line">
+						<!-- textarea - ввід багаторядкового тексту -->
+						<textarea autocomplete="off" name="message" class="form__area"></textarea>
+					</div>
+					<div class="form__line">
+						<!--
+							Тег  select - випадаючій список
+							Атрибут multiple
+							Тег option - елемент списку
+							Атрибут selected - вибраний за замовченням
+						 -->
+						<select name="list">
+							<option value="">Пункт 1</option>
+							<option value="">Пункт 2</option>
+							<option value="">Пункт 3</option>
+							<option value="">Пункт 4</option>
+							<option value="">Пункт 5</option>
+						</select>
+					</div>
+					<div class="form__line">
+						<!-- button - Кнопка 
+							type="button" - кнопка нічого не робить :)
+							type="reset" - обнуляє (скидає) поля вводу у формі
+							type="submit" - відправляє форму
+						-->
+						<button type="submit">Я кнопка</button>
+					</div>
+				</form>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	</body>
+</html>
