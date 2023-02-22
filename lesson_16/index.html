@@ -10,52 +10,109 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header"></header>
+			<header class="header">
+            <div class="header__container">
+               <a href="#" class="header__logo">
+                 <img src="img/logo.svg" alt="Logo" />
+               </a>
+               <nav class="header__menu menu">
+                 <ul class="menu__list">
+                   <li class="menu__item">
+                     <a href="#" class="menu__link">About Us</a>
+                   </li>
+                   <li class="menu__item">
+                     <a href="#" class="menu__link">Courses</a>
+                   </li>
+                   <li class="menu__item">
+                     <a href="#" class="menu__link">Events</a>
+                   </li>
+                   <li class="menu__item">
+                     <a href="#" class="menu__link">Blog</a>
+                   </li>
+                   <li class="menu__item">
+                     <a href="#" class="menu__link">Contacts</a>
+                   </li>
+                 </ul>
+               </nav>
+               <div class="header__actions actions-header">
+                 <a href="#" class="actions-header__button button">
+                   <span>Get consultation</span>
+                 </a>
+                 <a href="#" class="actions-header__authorization">
+                   <span>Log in / Register</span>
+                 </a>
+               </div>
+             </div>
+         </header>
 			<main class="page">
-				<!-- Приклади -->
-				<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
-					<div class="form__line">
-						<label for="name" class="form__label">Введіть ім'я</label>
-						<input id="name" required autocomplete="off" type="text" name="name" placeholder="Введіть ім'я" class="form__input">
-					</div>
-					<div class="form__line">
-						<label for="name" class="form__label">Введіть пароль</label>
-						<input id="name" required autocomplete="off" type="password" name="pass" placeholder="Введіть пароль" class="form__input">
-					</div>
-					<div class="form__line">
-						<!-- Кастомний чекбокс -->
-						<div class="checkbox">
-							<input id="car" autocomplete="off" type="checkbox" value="yes" name="car" class="checkbox__input">
-							<label for="car" class="checkbox__label"><span class="checkbox__text">Є тачка?</span></label>
-						</div>
-					</div>
-					<div class="form__line">
-						<select multiple name="list">
-							<option value="1">Пункт 1</option>
-							<option value="2">Пункт 2</option>
-							<option value="3">Пункт 3</option>
-							<option value="4">Пункт 4</option>
-							<option value="5">Пункт 5</option>
-						</select>
-					</div>
-					<div class="form__line">
-						<div class="form__title">Улюблена тваринка</div>
-						<!-- Тип radio - одиночний вибір -->
-						<!-- Для однієї групи радіо кнопок має бути одинакове значення атрибуту name -->
-						<div class="form__radio">
-							<input checked class="form__input form__input_radio" id="pet-01" required autocomplete="off" value="cat" name="pet" type="radio">
-							<label class="form__label" for="pet-01">Кішка</label>
-						</div>
-						<div class="form__radio">
-							<input class="form__input form__input_radio" id="pet-02" required autocomplete="off" name="pet" value="dog" type="radio">
-							<label class="form__label" for="pet-02">Собака</label>
-						</div>
-					</div>
-					<div class="form__line">
-						<button type="submit" class="form__button">Надіслати</button>
-						<input type="hidden" value="dsv;kljhsdf98798j" name="iam-hidden">
-					</div>
-				</form>
+            <div class="page__contacts contacts">
+               <div class="contacts__container">
+                  <div class="contacts__media">
+                     <img
+                     class="contacts__image"
+                     src="img/contacts/map.jpg"
+                     alt="Map"
+                   />
+                  </div>
+               </div>
+            </div>
+
+
+
+
+
+
+
+
+            
+            <!-- Приклади --> 
+				<!-- <div>
+               <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+                  <div class="form__line">
+                     <label for="name" class="form__label">Введіть ім'я</label>
+                     <input id="name" required autocomplete="off" type="text" name="name" placeholder="Введіть ім'я" class="form__input">
+                  </div>
+                  <div class="form__line">
+                     <label for="name" class="form__label">Введіть пароль</label>
+                     <input id="name" required autocomplete="off" type="password" name="pass" placeholder="Введіть пароль" class="form__input">
+                  </div>
+                  <div class="form__line">
+                     <!-- Кастомний чекбокс -->
+                     <div class="checkbox">
+                        <input id="car" autocomplete="off" type="checkbox" value="yes" name="car" class="checkbox__input">
+                        <label for="car" class="checkbox__label"><span class="checkbox__text">Є тачка?</span></label>
+                     </div>
+                  </div>
+                  <div class="form__line">
+                     <select multiple name="list">
+                        <option value="1">Пункт 1</option>
+                        <option value="2">Пункт 2</option>
+                        <option value="3">Пункт 3</option>
+                        <option value="4">Пункт 4</option>
+                        <option value="5">Пункт 5</option>
+                     </select>
+                  </div>
+                  <div class="form__line">
+                     <div class="form__title">Улюблена тваринка</div>
+                     <!-- Тип radio - одиночний вибір -->
+                     <!-- Для однієї групи радіо кнопок має бути одинакове значення атрибуту name -->
+                     <div class="form__radio">
+                        <input checked class="form__input form__input_radio" id="pet-01" required autocomplete="off" value="cat" name="pet" type="radio">
+                        <label class="form__label" for="pet-01">Кішка</label>
+                     </div>
+                     <div class="form__radio">
+                        <input class="form__input form__input_radio" id="pet-02" required autocomplete="off" name="pet" value="dog" type="radio">
+                        <label class="form__label" for="pet-02">Собака</label>
+                     </div>
+                  </div>
+                  <div class="form__line">
+                     <button type="submit" class="form__button">Надіслати</button>
+                     <input type="hidden" value="dsv;kljhsdf98798j" name="iam-hidden">
+                  </div>
+               </form>
+
+            </div> -->
+
 
 				<!-- 
 					Сервер очікує:
